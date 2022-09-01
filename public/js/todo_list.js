@@ -45,6 +45,8 @@ function addToList() {
         newLi.appendChild(newDiv);
         // append li to ul
         ulList.appendChild(newLi);
+        // clear input value
+        document.getElementById('task-title').value = "";
     } else {
         alert("can't add empty task");
     }
