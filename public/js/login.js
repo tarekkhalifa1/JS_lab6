@@ -13,7 +13,7 @@ function validate(){
     }else {
         failedLogin();
     }
-    
+
     return document.body.appendChild(newDiv);
 }
 
@@ -28,7 +28,6 @@ function successLogin(){
 
 function failedLogin(){
     newDiv.classList.remove('success');
-    newDiv.setAttribute('class','failed');
-    newDiv.classList.add('container');
+    newDiv.classList.add('failed');
     return  newDiv.innerHTML = 'Wrong username or password';
 }
